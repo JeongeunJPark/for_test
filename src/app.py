@@ -1,10 +1,11 @@
-'''
- # @ Create Time: 2024-03-30 19:40:33.462492
-'''
+import textwrap
 
-from dash import Dash, html, dcc
-import plotly.express as px
+from dash import dash_table
+from dash import Dash, html, dcc, Input, Output, dash_table
+import dash_cytoscape as cyto
 import pandas as pd
+import random
+import plotly.graph_objects as go
 
 app = Dash(__name__, title="for_test")
 server = app.server
